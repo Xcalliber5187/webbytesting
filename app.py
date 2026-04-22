@@ -11,7 +11,7 @@ import re
 
 @app.route('/renewable')
 def renewable():
-    url = "https://www.smartgriddashboard.com/all/generation/"
+    url = "https://www.smartgriddashboard.com/roi/generation/"
     page = urlopen(url)
     html = page.read().decode("utf-8")
     soup = BeautifulSoup(html, "html.parser")
